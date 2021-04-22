@@ -1,0 +1,193 @@
+@model Mpi
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Mpi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.DnRu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DnRu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SdnRu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SdnRu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DnEng)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DnEng)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SdnEng)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SdnEng)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mm)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mm)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Am)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Am)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeGroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgeGroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Met)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Met)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegCountry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegCountry)
+        </dd>
+        
+        
+     
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValidUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Admin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Admin)
+        </dd>
+      
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeTect)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgeTect)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SrcMark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SrcMark)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.ClssNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClssNavigation.ValEn)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.DsNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DsNavigation.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GtNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GtNavigation.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MgNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MgNavigation.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OqNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OqNavigation.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ParentNavigation.Oq)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rgf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rgf.KdId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeNavigation.ValEn)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

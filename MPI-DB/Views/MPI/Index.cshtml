@@ -1,0 +1,22 @@
+@model IEnumerable<Mpi>
+
+@{
+    ViewData["Title"] = "Список МПИ";
+}
+
+    <h2>Список МПИ</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@Model.Count();
+@Html.Grid(Model).Build(cols =>
+{
+    cols.Add(m => m.DnRu).RenderedAs(r=>Html.ActionLink(r.DnRu,"Details","mpi", new {id=r.Id }));
+    cols.Add(m => m.Mm);
+    cols.Add(m => m.Am);
+    cols.Add(m => m.Gt);
+}).Empty("Месторождений не найдено").Pageable(p =>
+{
+    p.RowsPerPage = 500;
+}).Filterable().Sortable()

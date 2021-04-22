@@ -1,0 +1,1 @@
+ Scaffold-DbContext "Host=localhost;Port=5411;Database=mpi;Username=postgres;Password=sql#12"  Npgsql.EntityFrameworkCore.PostgreSQL  -OutputDir Data -Context MpiContext -DataAnnotations -Schemas "public","dict","kd"  -Force
